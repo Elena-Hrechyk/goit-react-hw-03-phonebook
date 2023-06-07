@@ -20,7 +20,7 @@ export class App extends Component {
   }
 
   // Вызывается сразу после обновления компонента в DOM. Не вызывается при первоначальном рендере компонента
-  componentDidUpdate(prevState) {
+  componentDidUpdate(_, prevState) {
     const nextContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
     if (nextContacts !== prevContacts) {
